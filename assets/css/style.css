@@ -1,5 +1,4 @@
-/* where and what comments should I write before each element or section of the page? (Rework the CSS Issue #9)*/
-
+/* The asterisk selector applies to the entire web page */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -11,8 +10,8 @@ body {
 }
 
 /* 
-Ihave organised the selector based on where they are placed in the HTML.
- I have tried to organise the CSS properties according to groups 
+The selectors are organised based on where they are placed in the HTML and combined the selectors with the same properties and values.
+I have tried to organise the CSS properties according to groups as adviced in the following article https://medium.com/swlh/better-ways-to-organise-css-properties-9a066e7ded62
 */
 
 .header {
@@ -34,15 +33,19 @@ Ihave organised the selector based on where they are placed in the HTML.
     color: #d9dcd6;
 }
 
-.header nav {
-     float: right;
+/* ".header nav" selects the 3 links in the navigation section */
 
-     margin-right: 20px;
-     padding-top: 15px;
+.header nav {
+    float: right;
+
+    margin-right: 20px;
+    padding-top: 15px;
    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
+
+/* "list-style-type" property sets the marker or bullet point */
 
 .header nav ul {
     list-style-type: none;
@@ -52,6 +55,10 @@ Ihave organised the selector based on where they are placed in the HTML.
     display: inline-block;
     margin-left: 25px;
 }
+
+/* 
+"text-decoration:" property sets the appearance of decorative lines on text. learn more: https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration 
+*/
 
 a {
     color: #ffffff;
@@ -74,7 +81,7 @@ main {
     margin-left:20px
 }
 
-.search-engine-optimization {
+.search-engine-optimization, .online-reputation-management, .social-media-marketing {
     height: 300px;
     margin-bottom: 20px;
     padding: 50px;
@@ -86,13 +93,11 @@ main {
     color: #ffffff;
 }
 
-.search-engine-optimization img {
+.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
     max-height: 200px;
 }
 
-
-
-.search-engine-optimization h2 {
+.search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -105,27 +110,6 @@ main {
 article {
     font-size: 16px;
 }
-/* what is the difference betwween the id and class? */
-#online-reputation-management img {
-    max-height: 200px;
-}
-
-.online-reputation-management {
-    height: 300px;
-    margin-bottom: 20px;
-    padding: 50px;
-
-    background-color: #0072bb;
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ffffff;
-}
-
-.online-reputation-management h2, .social-media-marketing h2 {
-    margin-bottom: 20px;
-
-    font-size: 36px;
-}
 
 .float-right {
     float: right;
@@ -133,27 +117,6 @@ article {
     margin-left: 25px;
 }
 
-.social-media-marketing {
-    height: 300px;
-    margin-bottom: 20px;
-    padding: 50px;
-
-    background-color: #0072bb;
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ffffff;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-/* .social-media-marketing h2 {
-    margin-bottom: 20px;
-
-    font-size: 36px; 
-} 
- */
 aside {
     float: right;
     clear: both;
@@ -168,68 +131,26 @@ aside {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.benefit-lead img {
+.benefit-lead img, .benefit-brand img, .benefit-cost img {
     display: block;
 
     max-width: 150px;
 
     margin: 10px auto;
 }
-/* BL, BB BC have the same values, should I keep them the seperate or combine them? */
-.benefit-lead {
+
+.benefit-lead, .benefit-brand, .benefit-cost {
     margin-bottom: 32px;
 
     color: #ffffff;
 }
 
-.benefit-lead h2 {
+.benefit-lead h2, .benefit-brand h2, .benefit-cost h2 {
     margin-bottom: 10px;
 
     text-align: center;
-    font-size: 20px;
+    font-size: 18.72px;
 }
-
-.benefit-brand {
-    margin-bottom: 32px;
-
-    color: #ffffff;
-}
-
-.benefit-brand h2 {
-    margin-bottom: 10px;
-
-    text-align: center;
-    font-size: 20px;
-}
-
-.benefit-brand img {
-    display: block;
-
-    max-width: 150px;
-    margin: 10px auto;
-    
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-
-    color: #ffffff;
-}
-
-.benefit-cost h2 {
-    margin-bottom: 10px;
-
-    text-align: center;
-    font-size: 20px;
-}
-
-.benefit-cost img {
-    display: block;
-
-    max-width: 150px;
-    margin: 10px auto;
-}
-
 
 .footer {
     clear: both;
